@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Coin</title>
+
+</head>
+
+<body>
+<div id="coin" style="font-size: 450px; text-align: center; cursor: pointer;" onclick="javascript:getCoin('0');" title="Click Start">🌝</div>
+
+<script type="text/javascript">
+//https://www.v2ex.com/t/548388
+var anime = ['🌝', '🌖', '🌗', '🌘', '🌚', '🌒', '🌓', '🌔'];
+var result = ['🌚', '🌝'];
+
+function getCoin(i) {
+	console.log(i);
+	if(i < anime.length){
+		document.getElementById("coin").innerHTML=anime[i];
+		setTimeout(function(){getCoin(++i)}, 417);//24 fps (1/24 ≈ 0.0417)
+	} else {
+		document.getElementById("coin").innerHTML=result[Math.floor(Math.random()*10) % 2];
+	}
+}
+</script>
+</body>
+</html>
