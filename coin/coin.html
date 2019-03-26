@@ -17,7 +17,7 @@ var result = ['🌚', '🌝'];
 function getCoin(i) {
 	if(i < anime.length){
 		document.getElementById("coin").innerHTML=anime[i];
-		setTimeout(function(){getCoin(++i)}, 417);//24 fps (1/24 ≈ 0.0417)
+		setTimeout(function(){getCoin(++i)}, 42);//24 fps (1/24 ≈ 0.0417 ≈ 0.042)
 	} else {
 		document.getElementById("coin").innerHTML=result[Math.floor(Math.random()*10) % 2];
 	}
