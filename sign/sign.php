@@ -1,5 +1,5 @@
 <?php
-if($_POST['list'] ?? 0) {
+if ($_POST['list'] ?? 0) {
 	$array = array('01' => 'Name');
 	$list = explode(',', $_POST['list']);
 	foreach ($list as $name) {
@@ -15,6 +15,6 @@ if($_POST['list'] ?? 0) {
 }
 ?>
 <form action="" method="POST">
-  <p>签到名单: <input type="text" name="list" /></p>
-  <input type="submit" value="Submit" />
+	<p>签到名单: <input type="text" name="list" /></p>
+	<input type="submit" value="Submit" />
 </form>
