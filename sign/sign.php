@@ -7,7 +7,7 @@ if ($_POST['list'] ?? 0) {
 		if ($result !== false) {
 			unset($array[$result]);
 		} else {
-			coutinue;
+			continue;
 		}
 	}
 	echo "未到名单: ";
