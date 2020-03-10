@@ -10,7 +10,7 @@ if ($_POST['list'] ?? 0) {
 			coutinue;
 		}
 	}
-	echo "未到：";
+	echo "未到名单: ";
 	print_r($array);
 }
 ?>
