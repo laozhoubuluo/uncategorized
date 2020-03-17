@@ -1,7 +1,7 @@
 <?php
 if ($_POST['list'] ?? 0) {
 	$array = array('01' => 'Name');
-	$list = explode(',', $_POST['list']);
+	$list = explode(',', trim($_POST['list']));
 	foreach ($list as $name) {
 		$result = array_search($name, $array);
 		if ($result !== false) {
